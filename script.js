@@ -1,5 +1,8 @@
-document.getElementById("akanForm").addEventListener("submit", function (e) {
-  e.preventDefault();
+//Listen for when the form is submitted
+document.getElementById("akanForm").addEventListener("submit", function (event) {
+  
+  //Prevent the page from refreshing when the form is submitted
+    event.preventDefault();
 
   let day = parseInt(document.getElementById("day").value);
   let month = parseInt(document.getElementById("month").value);
@@ -60,7 +63,14 @@ document.getElementById("akanForm").addEventListener("submit", function (e) {
     "Javier",
     ,
   ];
-  let femaleNames = ["Britney", "Laura", "Megan", "Lorena", "Brianna", "Katrina"];
+  let femaleNames = [
+    "Britney",
+    "Laura",
+    "Megan",
+    "Lorena",
+    "Brianna",
+    "Katrina",
+  ];
 
   let name = gender === "male" ? maleNames[d] : femaleNames[d];
 

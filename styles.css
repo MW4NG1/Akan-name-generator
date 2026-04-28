@@ -41,15 +41,20 @@ input, select, button {
   width: 100%;
   padding: 10px;
   margin: 8px 0;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+  border-radius: 8px;
+  border: none;
+  outline: none;
 }
 
 button {
-  background-color: #4facfe;
+  width: 100%;
+  padding: 10px;
+  background-color: linear-gradient(135deg, #00c6ff, #0072ff);
   color: white;
+  font-weight: bold;
   border: none;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 button:hover {

@@ -23,18 +23,41 @@ header {
   color: white;
   font-size: 28px;
   font-weight: bold;
-  background: linear-gradient(90deg, black, red, gold);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background: linear-gradient(
+    90deg,
+    #ce1126 0%,   /* Red */
+    #fcd116 40%,  /* Gold */
+    #006b3f 80%,  /* Green */
+  );
   text-align: center;
+  padding: 60px 20px;
+  color: black;
+  position: relative;
 }
 
-h1 {
+/* Add dark overlay for readability */
+header::after {
+content: "";
+position: absolute;
+inset: 0;
+background-image: rgba(0,0,0,0.3);
+}
+
+/* Keep text above overlay */
+header h1, header p {
+  position: relative;
+  z-index: 1;
+}
+
+/* Make title stand out */
+header h1 {
   margin-bottom: 10px;
   font-size: 32px;
 }
 
-h p{font-size: 16px;}
+header p {
+  font-size: 16px;
+}
 
 .hero {
   display: flex;

@@ -74,23 +74,24 @@ document.getElementById("akanForm").addEventListener("submit", function (event) 
 
   //Akan names for males
   let maleNames = [
-    "Alex",
-    "James",
-    "Michael",
-    "Xander",
-    "Christian",
-    "Javier",
-    ,
+    "Kwasi",
+    "Kwadwo",
+    "Kwabena",
+    "Kwaku",
+    "Yaw",
+    "Kofi",
+    "Kwame"
   ];
 
   //Akan names for females
   let femaleNames = [
-    "Britney",
-    "Laura",
-    "Megan",
-    "Lorena",
-    "Brianna",
-    "Katrina",
+    "Akosua",
+    "Adwoa",
+    "Abenaa",
+    "Akua",
+    "Yaa",
+    "Afua",
+    "Ama",
   ];
 
   // 6. Determine the name

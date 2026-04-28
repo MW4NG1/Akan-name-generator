@@ -36,6 +36,11 @@ header {
   text-align: center;
   padding: 40px 20px;
 }
+header img{
+  width: 120px;
+  height: auto;
+}
+ 
 
 header h1 {
   font-size: 32px;
@@ -116,8 +121,8 @@ button:hover {
 
 /* FOOTER */
 footer {
+  background-color:rgb(148, 124, 65);
   text-align: center;
-  padding: 20px;
-  background: #020617;
-  margin-top: 60px;
+  padding: 40px 20px;
+
 }

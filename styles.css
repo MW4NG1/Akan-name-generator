@@ -1,102 +1,72 @@
-/*Reset*/
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* BODY */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #141e30, #243b55);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-}
-
-header {
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  font-family: Arial, sans-serif;
+  background: #0f172a;
   color: white;
-  font-size: 28px;
-  font-weight: bold;
-  background: linear-gradient(
-    90deg,
-    #ce1126 0%,   /* Red */
-    #fcd116 40%,  /* Gold */
-    #006b3f 80%,  /* Green */
-  );
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(90deg, black, red, gold);
   text-align: center;
-  padding: 60px 20px;
-  color: black;
-  position: relative;
+  padding: 40px 20px;
 }
 
-/* Add dark overlay for readability */
-header::after {
-content: "";
-position: absolute;
-inset: 0;
-background-image: rgba(0,0,0,0.3);
-}
-
-/* Keep text above overlay */
-header h1, header p {
-  position: relative;
-  z-index: 1;
-}
-
-/* Make title stand out */
 header h1 {
-  margin-bottom: 10px;
   font-size: 32px;
+  margin-bottom: 10px;
 }
 
 header p {
   font-size: 16px;
 }
 
+/* HERO */
 .hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
   text-align: center;
   padding: 60px 20px;
   max-width: 700px;
+  margin: auto;
 }
 
 .hero h2 {
   font-size: 26px;
   margin-bottom: 10px;
-  color: white;
 }
 
 .hero p {
   opacity: 0.8;
 }
 
+/* FORM SECTION */
 .form-section {
   display: flex;
   justify-content: center;
-  padding: 40px 20px;
+  padding: 60px 20px;
 }
 
+/* YOUR CONTAINER (UPGRADED) */
 .container {
   background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(10px);
   padding: 30px;
   border-radius: 15px;
-  text-align: center;
   width: 320px;
+  backdrop-filter: blur(10px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  text-align: center;
 }
 
-input, select {
+/* INPUTS */
+input,
+select {
   width: 100%;
   padding: 12px;
   margin: 10px 0;
@@ -104,40 +74,33 @@ input, select {
   border: none;
 }
 
+/* BUTTON */
 button {
   width: 100%;
   padding: 12px;
-  margin-top: 10px;
+  border: none;
   border-radius: 8px;
   background: linear-gradient(90deg, red, gold);
   color: black;
   font-weight: bold;
-  border: none;
   cursor: pointer;
   transition: 0.3s;
 }
+
 button:hover {
   transform: scale(1.05);
-  box-shadow: 0 5px 15px rgba(255, 215, 0, 0.5);
 }
 
+/* RESULT */
 #result {
   margin-top: 20px;
   font-weight: bold;
-  font-size: 18px;
-  color: white;
-  animation: fadeIn 1s ease-in;
 }
 
+/* FOOTER */
 footer {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: white;
-  font-size: 14px;
-  opacity: 0.6;
-  margin-top: 60px;
-  background: #020617;
+  text-align: center;
   padding: 20px;
+  background: #020617;
+  margin-top: 60px;
 }
